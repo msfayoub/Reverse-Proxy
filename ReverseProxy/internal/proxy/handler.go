@@ -90,9 +90,6 @@ func (h *ProxyHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	rp.ServeHTTP(w, req)
 }
 
-/* ---------------- Helpers ---------------- */
-
-// No bodyWrapper: finish() is called directly in ModifyResponse and ErrorHandler
 
 // isConnRefused detects "connection refused" even if the error is wrapped
 func isConnRefused(err error) bool {
