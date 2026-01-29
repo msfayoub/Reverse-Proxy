@@ -70,4 +70,3 @@ func (p *ServerPool) CountAlive() int{
 	return count
 }
 
-
